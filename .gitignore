@@ -43,6 +43,10 @@ config.ini
 .idea/vcs.xml
 .idea/inspectionProfiles/
 
+
+.env
+
+
 ### MySQL Workbench ###
 # Connection configurations (sensitive)
 *.connections
@@ -65,3 +69,5 @@ Desktop.ini
 /staticfiles/
 /migrations/
 !/migrations/__init__.py
+
+
