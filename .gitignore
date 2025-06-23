@@ -1,0 +1,67 @@
+### Python ###
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.py,cover
+
+### Virtual Environment ###
+.virenv/
+venv/
+env/
+ENV/
+
+### Database ###
+# SQLite (default Django DB)
+db.sqlite3
+*.sqlite
+
+# MySQL local files (configs, dumps, temp files)
+*.mwb
+*.myd
+*.myi
+*.sock
+/tmp/mysql.sock
+
+### Secrets ###
+.env
+*.env
+secrets.json
+config.ini
+
+### PyCharm ###
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries/
+.idea/shelf/
+.idea/misc.xml
+.idea/vcs.xml
+.idea/inspectionProfiles/
+
+### MySQL Workbench ###
+# Connection configurations (sensitive)
+*.connections
+*.wb_connections
+
+# Query history/logs
+*.query
+*.log
+
+### macOS ###
+.DS_Store
+._*
+
+### Windows ###
+Thumbs.db
+Desktop.ini
+
+### Django ###
+/media/
+/staticfiles/
+/migrations/
+!/migrations/__init__.py
