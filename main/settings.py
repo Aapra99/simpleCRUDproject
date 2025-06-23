@@ -56,17 +56,17 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'main.wsgi.application'
 
-
-
+import os
+from dotenv import load_dotenv
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'formkodata',               # Name of the database you created
-        'USER': 'root',                     # e.g., 'root'
-        'PASSWORD': 'AapraUchiha',          # MySQL password
-        'HOST': '127.0.0.1',                # or the IP address you used in Workbench
-        'PORT': '3306',                     # default MySQL port
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST'),
+        'PORT': os.getenv('DB_PORT'),
     }
 }
 
