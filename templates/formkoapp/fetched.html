@@ -1,0 +1,18 @@
+{% extends 'formkoapp/options.html' %}
+{% block title %} FETCHED {% endblock %}
+
+{% block content %}
+
+<ul class="list-group" style="width: 300px">
+    {% for p in person %}
+        <li class="list-group-item list-group-item-success" >
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">name:   <strong>{{ p.name }}</strong></li>
+            <li class="list-group-item">age:    <strong>{{ p.age }}</strong></li>
+            <li class="list-group-item">sex:    <strong>{{ p.sex }}</strong></li>
+        </ul>
+        </li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}
